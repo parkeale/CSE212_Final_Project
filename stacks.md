@@ -16,6 +16,7 @@ Cons
 ## Diagram 
 A stack is often compared to a pile of plates. When you put plates away in the cupboard you stack them. When you go to grab a plate you will always grab the first one
 put on to the stack. (First in last out)
+![Stack example](https://myoctocat.com/assets/images/base-octocat.svg) 
 ## Stack Commands
 | Operation        | Description                    | Python Syntax               | Big O Performance |
 | -----------------| ------------------------------ | ----------------------------| ----------------- |
