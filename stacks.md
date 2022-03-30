@@ -24,7 +24,7 @@ put on to the stack. To put a plate(data) on a stack you use the PUSH command. T
 | pop()            | Removes value from top of stack| variable = stack_variable.pop()|    O(1)        |
 |size()            | Return size of stack.          | variable = len(stack_variable)| O(1)            |
 
-## Stack Examples
+## Stack Examples (tutorial)
 Websites = []       #creates the stack
 
 website.append(address1)    # adds values(website addresses) to the stack
@@ -37,7 +37,7 @@ website.pop                   # removes the last item that you put on to the sta
 
 print(websites)               #[address1,address2]
 
-## Example Problem 
+## Challenge Problem 
 
 Create a stack to handle inputs on a keyboard. Each word will be an item on the stack. Create a stack for the phrase 
 "She sells sea shells by the cea shore"
