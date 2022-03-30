@@ -6,6 +6,7 @@ Each node contains the data and pointers to where the next section of memory is.
 ## Diagram explaining Linked Lists
 
 - linked list
+![Linked List](Linked List Diagram.jpg)
 - double linked list
 
 ## linked list Commands
