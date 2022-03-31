@@ -25,6 +25,7 @@ put on to the stack. To put a plate(data) on a stack you use the PUSH command. T
 |size()            | Return size of stack.          | variable = len(stack_variable)| O(1)            |
 
 ## Stack Examples (tutorial)
+``` python 
 Websites = []       #creates the stack
 
 website.append(address1)    # adds values(website addresses) to the stack
@@ -36,6 +37,7 @@ print(websites)              # will print [address1,address2,address2]
 website.pop                   # removes the last item that you put on to the stack
 
 print(websites)               #[address1,address2]
+```
 
 ## Challenge Problem 
 
