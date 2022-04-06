@@ -122,3 +122,4 @@ class BST:
 
 
 ## Challange Problem 
+- Create a binary search tree with famous cities. Have letters like A B C be the small values, and letter like X, Y, Z be the large values. format the tree to insert remove, and search for the cities. Model the code after the example given above. 
