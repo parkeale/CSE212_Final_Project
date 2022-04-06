@@ -116,7 +116,8 @@ class BST:
         if node is not None:
             yield from self._traverse_backward(node.right)
             yield node.data
-            yield from self._traverse_backward(node.left)
+            yield from self._traverse_backward(node.left)      
+#Special thanks to Aaron Kay. He helped me first understand these concepts. Some portions of this code are modeled after examples he gave to teach these concepts. 
 ````
 
 
