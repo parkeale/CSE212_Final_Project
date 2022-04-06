@@ -23,7 +23,6 @@ Each node contains the data and pointers to where the next section of memory is.
 
 ## Example of a Linked List
 Example of a linked list.
-Note this code is heavily modeled after an example used in a class taught by Aaron Kay.
 ```python
 class Linked_List:
     class Node:
