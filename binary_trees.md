@@ -18,7 +18,106 @@ In a Binary search tree data is placed into the nodes in a specific manner.  Val
 |size()                   | Return size of the BST                     | O(1)              |
 |empty()                  | Checks for empty list                      | O(1)              |
 ## Example of Binary Search Tree
-```python````
+Practice studying others code by understanding this binary search tree. 
+```python
+class BST:
+
+    class Node:
+
+        def __init__(self, data):
+            self.data = data
+            self.left = None
+            self.right = None
+
+    def __init__(self):
+        """
+        Initialize an empty BST.
+        """
+        self.root = None
+
+    def insert(self, data):
+        if self.root is None:
+            self.root = BST.Node(data)
+        else:
+            self._insert(data, self.root)  # Start at the root
+
+    def _insert(self, data, node):
+
+        if data < node.data:
+            # The data belongs on the left side.
+            if node.left is None:
+                if data != node.data:
+                    node.left = BST.Node(data)
+            else:
+                # recursively on the left sub-tree.
+                self._insert(data, node.left)
+        else:
+            # The data belongs on the right side.
+            if node.right is None:
+                if data != node.data:
+                    node.right = BST.Node(data)
+            else:
+                # recursively on the right sub-tree.
+                self._insert(data, node.right)
+    
+    def __contains__(self, data):
+
+        return self._contains(data, self.root)
+
+
+    def _contains(self, data, node):
+        """ The function will search for a node with data
+        """
+        if data == node.data:
+            return True
+        elif data < node.data:
+            # The data belongs on the left side.
+            if node.left is None:
+                return False
+                # Data was not found
+            else:
+                # Need to keep looking.  Call _insert
+                # recursively on the left sub-tree.
+                return self._contains(data, node.left)
+
+        else:
+            # The data belongs on the right side.
+            if node.right is None:
+                # Data was not found
+                return False
+            else:
+                # Need to keep looking.  Call _conversion
+                # recursively on the right sub-tree.
+                return self._contains(data, node.right)
+        # use recursion to pass through the tree
+
+    def __iter__(self):
+        yield from self._traverse_forward(self.root)  # Start at the root
+        
+    def _traverse_forward(self, node):
+        """
+        Does a forward traversal (in-order traversal).
+        """
+        if node is not None:
+            yield from self._traverse_forward(node.left)
+            yield node.data
+            yield from self._traverse_forward(node.right)
+        
+    def __reversed__(self):
+        """
+        Perform a formward traverse (starting from the root) 
+        """        
+        yield from self._traverse_backward(self.root) 
+
+    def _traverse_backward(self, node):
+        """
+        Does a backwards traverse.     
+        """
+        if node is not None:
+            yield from self._traverse_backward(node.right)
+            yield node.data
+            yield from self._traverse_backward(node.left)
+````
 
 
 
