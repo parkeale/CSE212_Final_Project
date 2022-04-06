@@ -17,5 +17,9 @@ In a Binary search tree data is placed into the nodes in a specific manner.  Val
 |height(node)             | Determine Height of BST                    | O(n)              |
 |size()                   | Return size of the BST                     | O(1)              |
 |empty()                  | Checks for empty list                      | O(1)              |
-## Example of Binary Trees
+## Example of Binary Search Tree
+```python````
+
+
+
 ## Challange Problem 
